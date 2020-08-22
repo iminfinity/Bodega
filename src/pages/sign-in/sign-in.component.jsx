@@ -24,6 +24,7 @@ const SignIn = ({ handleSubmit }) => {
         placeholder="Enter Pasword"
       />
       <input type="submit" value="Log in" />
+      <p>sample: email:test@mail.com password:bodega-react</p>
     </form>
   );
 };
