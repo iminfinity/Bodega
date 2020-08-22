@@ -1,0 +1,26 @@
+.list-page {
+  margin-top: 3vh;
+  height: 90vh;
+  display: grid;
+  .users-list {
+    display: grid;
+    grid-template-columns: 20vw 1fr;
+  }
+  .user-details {
+    display: grid;
+    grid-template-rows: 80% 20%;
+  }
+
+  @media (max-width: 800px) {
+    display: flex;
+    .users-list {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .user-details {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+form.add-customer {
+  display: flex;
+  height: 80%;
+  margin-top: 5%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //   margin: 20px 50px;
+  .input-group {
+    display: flex;
+    width: 60%;
+    margin: 10px 20px;
+    label {
+      width: 20%;
+      padding: 8px;
+    }
+    input {
+      width: 80%;
+      height: 40px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  input[type="submit"] {
+    margin-top: 40px;
+    width: 15%;
+    height: 35px;
+    background: none;
+    border: 1px solid #101010;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .input-group {
+      width: 80%;
+      margin: 10px 20px;
+      label {
+        width: 20%;
+        padding: 8px;
+      }
+      input {
+        width: 80%;
+        height: 40px;
+      }
+    }
+
+    input[type="submit"] {
+      margin-top: 40px;
+      width: 50%;
+      height: 35px;
+    }
+  }
+}

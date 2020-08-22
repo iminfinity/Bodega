@@ -1,0 +1,48 @@
+form.entry-point {
+  box-shadow: 0px -5px 6px #101010;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 15px;
+  label {
+    display: none; //to get 100% in lighthosue
+  }
+  input {
+    width: 80%;
+    margin-bottom: 5px;
+
+    height: 70px;
+    &:focus {
+      outline: none;
+    }
+    &[type="submit"] {
+      background: none;
+      width: 20%;
+      border: 1px solid black;
+      margin-top: 10px;
+      padding: 3px;
+      outline: none;
+      border: none;
+      box-shadow: -3px 3px 5px 2px #101010;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
+  @media (max-width: 800px) {
+    input {
+      width: 80%;
+      height: 40px;
+      &:focus {
+        outline: none;
+      }
+      &[type="submit"] {
+        background: none;
+        width: 40%;
+        border: 1px solid black;
+        margin-top: 10px;
+      }
+    }
+  }
+}

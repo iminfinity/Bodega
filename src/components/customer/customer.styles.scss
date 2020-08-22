@@ -1,0 +1,8 @@
+.user-data {
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 800px) {
+    margin-bottom: 10px;
+  }
+}
