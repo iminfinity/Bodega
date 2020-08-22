@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <header className="page-header">
       <div>
-        <Link to="/"> Malla's Shop</Link>
+        <Link to="/"> Bodega</Link>
       </div>
       {signedIn ? <div onClick={logout}>Logout</div> : null}
     </header>
