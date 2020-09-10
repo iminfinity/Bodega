@@ -13,6 +13,8 @@ form.entry-point {
   input {
     height: 50px;
     width: 100px;
+    caret-color: #222428;
+
     &:first-child {
       width: 450px;
     }
@@ -20,6 +22,7 @@ form.entry-point {
     padding-left: 6px;
     &:focus {
       outline: none;
+      border-color: #222428;
     }
     &[type="submit"] {
       background: #222428;

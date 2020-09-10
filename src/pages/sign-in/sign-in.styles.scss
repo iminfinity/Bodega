@@ -4,12 +4,26 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  height: 90%;
+  height: 80%;
   input {
     height: 50px;
     width: 40vw;
     margin-top: 40px;
     padding: 10px;
+  }
+  input[type="submit"] {
+    background: #222428;
+    width: 70px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8%;
+    color: #fdfdfd;
+    padding: 0;
+    &:hover {
+      background: #222428f0;
+    }
   }
   @media (max-width: 800px) {
     input {
