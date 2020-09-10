@@ -21,6 +21,29 @@ a:visited {
   color: initial;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
+} */
+
+::-webkit-scrollbar {
+  width: 5px;
+  direction: ltr;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #222438;
+  border-radius: 10%;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #222438;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: whitesmoke;
 }

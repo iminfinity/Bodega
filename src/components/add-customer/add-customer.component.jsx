@@ -45,7 +45,6 @@ const AddCustomer = () => {
 
   return (
     <form className="add-customer" onSubmit={createUser}>
-      <h2>Add New Customer</h2>
       <div className="input-group">
         <label>Name</label>
         <input
@@ -72,8 +71,10 @@ const AddCustomer = () => {
       </div>
       <div className="input-group">
         <label>Image</label>
-
-        <input type="file" onChange={fileUpload} />
+        <label htmlFor="file-upload">
+          <ion-icon icon="images-sharp" />
+        </label>
+        <input type="file" id="file-upload" onChange={fileUpload} />
       </div>
       <input type="submit" value="Add Customer" readOnly />
     </form>

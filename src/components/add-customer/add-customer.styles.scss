@@ -23,14 +23,24 @@ form.add-customer {
     }
   }
 
+  input[type="file"] {
+    display: none;
+  }
+
   input[type="submit"] {
-    margin-top: 40px;
-    width: 15%;
-    height: 35px;
-    background: none;
-    border: 1px solid #101010;
-    &:focus {
-      outline: none;
+    background: #222428;
+    width: 180px;
+    height: 40px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 2%;
+    color: #fdfdfd;
+    padding: 0;
+    font-size: 25px;
+    &:hover {
+      background: #222428f0;
     }
   }
 
@@ -40,7 +50,7 @@ form.add-customer {
       margin: 10px 20px;
       label {
         width: 20%;
-        padding: 8px;
+        padding: 4px;
       }
       input {
         width: 80%;
