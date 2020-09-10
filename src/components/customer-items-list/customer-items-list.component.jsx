@@ -57,9 +57,13 @@ const CustomerItemsList = ({
             <p> {item.description}</p>
             <p>Rs {item.price}</p>
           </div>
-          <button onClick={() => deleteItem(index)} title="Paid">
-            Paid
-          </button>
+          <ion-button
+            onClick={() => deleteItem(index)}
+            title="Paid"
+            color="dark"
+          >
+            <ion-icon icon="checkmark-done-outline" />
+          </ion-button>
         </div>
       ))}
     </div>

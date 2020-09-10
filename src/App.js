@@ -29,19 +29,23 @@ function App() {
   }, []);
 
   return (
-    <div className="page">
-      <Header />
-      <Switch>
-        <Route
-          exact
-          path="/"
-          render={() =>
-            signedIn ? <List /> : <SignIn handleSubmit={handleSubmit} />
-          }
-        />
-        <Route path="/addcustomer" component={AddCustomer} />
-      </Switch>
-    </div>
+    <ion-app>
+      <ion-content>
+        <div className="page">
+          <Header />
+          <Switch>
+            <Route
+              exact
+              path="/"
+              render={() =>
+                signedIn ? <List /> : <SignIn handleSubmit={handleSubmit} />
+              }
+            />
+            <Route path="/addcustomer" component={AddCustomer} />
+          </Switch>
+        </div>
+      </ion-content>
+    </ion-app>
   );
 }
 

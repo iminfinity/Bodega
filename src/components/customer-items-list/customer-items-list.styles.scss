@@ -1,4 +1,8 @@
 .customer-items-list {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   .item {
     border-bottom: 2px solid whitesmoke;
     margin-bottom: 4px;
@@ -7,17 +11,6 @@
     justify-content: space-between;
     text-transform: capitalize;
     .item-details {
-    }
-    button {
-      padding: 3px;
-      height: 30px;
-      align-self: center;
-      background: none;
-      outline: none;
-      border: none;
-      box-shadow: -3px -3px 5px 2px #101010;
-      cursor: pointer;
-      font-weight: bold;
     }
   }
 }

@@ -24,12 +24,28 @@ const Header = () => {
       .catch((error) => alert.show(error.message));
   };
   return (
-    <header className="page-header">
-      <div>
-        <Link to="/"> Bodega</Link>
-      </div>
-      {signedIn ? <div onClick={logout}>Logout</div> : null}
-    </header>
+    // <ion-header>
+    //   <div>
+    //     <Link to="/"> Bodega</Link>
+    //   </div>
+    //   {signedIn ? <div onClick={logout}>Logout</div> : null}
+    // </ion-header>
+
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="primary">
+          {signedIn ? (
+            <ion-button onClick={logout}>
+              <ion-icon name="log-in-outline"></ion-icon>
+            </ion-button>
+          ) : null}
+        </ion-buttons>
+
+        <ion-title>
+          <Link to="/"> Bodega</Link>
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
   );
 };
 

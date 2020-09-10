@@ -30,7 +30,27 @@ const EntryPoint = ({ currentCustomer, identifier }) => {
   return (
     <form className="entry-point" onSubmit={handleSubmit}>
       <h2>Add Item</h2>
-      <label>Details</label>
+      <div>
+        <ion-item>
+          <ion-label>Details</ion-label>
+          <ion-input
+            type="text"
+            value={description}
+            onChange={(event) => setDescription(event.target.value)}
+            required
+          ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Price</ion-label>
+          <ion-input
+            type="number"
+            value={price}
+            onChange={(event) => setPrice(event.target.value)}
+            required
+          ></ion-input>
+        </ion-item>
+      </div>
+      {/* <label>Details</label>
       <input
         type="text"
         placeholder="Details"
@@ -45,8 +65,10 @@ const EntryPoint = ({ currentCustomer, identifier }) => {
         value={price}
         onChange={(event) => setPrice(event.target.value)}
         required
-      />
-      <input type="Submit" value="ADD" readOnly />
+      /> */}
+      <ion-button color="dark" type="Submit">
+        Add
+      </ion-button>
     </form>
   );
 };
