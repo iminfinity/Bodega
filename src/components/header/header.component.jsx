@@ -24,15 +24,13 @@ const Header = () => {
       .catch((error) => alert.show(error.message));
   };
   return (
-    // <ion-header>
-    //   <div>
-    //     <Link to="/"> Bodega</Link>
-    //   </div>
-    //   {signedIn ? <div onClick={logout}>Logout</div> : null}
-    // </ion-header>
-
-    <ion-header>
+    <ion-header className="try">
       <ion-toolbar>
+        <ion-title>
+          <Link to="/" className="ion-title">
+            Bodega
+          </Link>
+        </ion-title>
         <ion-buttons slot="primary">
           {signedIn ? (
             <ion-button onClick={logout}>
@@ -40,10 +38,6 @@ const Header = () => {
             </ion-button>
           ) : null}
         </ion-buttons>
-
-        <ion-title>
-          <Link to="/"> Bodega</Link>
-        </ion-title>
       </ion-toolbar>
     </ion-header>
   );

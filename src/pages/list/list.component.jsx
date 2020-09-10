@@ -38,23 +38,20 @@ const List = () => {
 
   return (
     <div className="list-page">
+      <div className="user-details">
+        <Customer
+          currentCustomer={currentCustomer}
+          customerDetails={customerDetails}
+          identifier={identifier}
+        />
+        <EntryPoint currentCustomer={currentCustomer} identifier={identifier} />
+      </div>
       <div className="users-list">
         <CustomerList
           currentCustomer={currentCustomer}
           changeCurrentUser={changeCurrentUser}
           customerDetails={customerDetails}
         />
-        <div className="user-details">
-          <Customer
-            currentCustomer={currentCustomer}
-            customerDetails={customerDetails}
-            identifier={identifier}
-          />
-          <EntryPoint
-            currentCustomer={currentCustomer}
-            identifier={identifier}
-          />
-        </div>
       </div>
     </div>
   );

@@ -1,58 +1,54 @@
 form.entry-point {
-  box-shadow: 0px -5px 6px #101010;
-  padding-top: 40px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-top: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  padding-bottom: 15px;
-  div {
-    width: 80%;
-    ion-item {
-      --padding-top: 0;
-      --padding-bottom: 0;
-      ion-input {
-        --padding-top: 0;
-        --padding-bottom: 0;
-      }
-    }
-  }
-  label {
-    display: none; //to get 100% in lighthosue
-  }
+  flex-direction: row;
+  border-top: 2px solid whitesmoke;
+  background: whitesmoke;
   input {
-    width: 80%;
-    margin-bottom: 5px;
-
-    height: 70px;
+    height: 50px;
+    width: 100px;
+    &:first-child {
+      width: 450px;
+    }
+    margin-right: 20px;
+    padding-left: 6px;
     &:focus {
       outline: none;
     }
     &[type="submit"] {
-      background: none;
-      width: 20%;
-      border: 1px solid black;
-      margin-top: 10px;
-      padding: 3px;
+      background: #141516;
+      width: 70px;
       outline: none;
-      border: none;
-      box-shadow: -3px 3px 5px 2px #101010;
+      border: 1px solid #222428;
       cursor: pointer;
       font-weight: bold;
+      border-radius: 8%;
+      box-shadow: 0 0 2px 1px #222428;
+      color: white;
+      text-align: center;
+      &:hover {
+        background: #222428;
+      }
     }
   }
   @media (max-width: 800px) {
+    padding-left: 3px;
     input {
-      width: 80%;
+      width: 80px;
       height: 40px;
+      &:first-child {
+        width: 120px;
+      }
       &:focus {
         outline: none;
       }
       &[type="submit"] {
-        background: none;
-        width: 40%;
-        border: 1px solid black;
-        margin-top: 10px;
+        width: 50px;
       }
     }
   }

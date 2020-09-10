@@ -7,7 +7,7 @@ const CustomerList = ({ customerDetails, changeCurrentUser }) => {
       <div className="go-to-add-customer">
         <h2>Customers</h2>
         <Link to="/addcustomer" title="Add New Customer">
-          &#10010;
+          <ion-icon name="person-add-sharp"></ion-icon>
         </Link>
       </div>
       <div className="customers-list">

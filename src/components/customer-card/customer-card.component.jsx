@@ -69,6 +69,16 @@ const CustomerCard = ({
         <br />
         Total: Rs <b>{currentCustomerTotal}</b>
       </ion-card-content>
+      <div className="delete-customer">
+        <ion-button
+          onClick={() => deleteCustomer()}
+          title="Delete Customer"
+          color="dark"
+          size="small"
+        >
+          <ion-icon icon="trash-outline" />
+        </ion-button>
+      </div>
     </ion-card>
   );
 };
