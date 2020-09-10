@@ -17,7 +17,7 @@
     />
     <title>Bodega</title>
 
-    <script
+    <!-- <script
       type="module"
       src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
     ></script>
@@ -28,10 +28,15 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
-    />
+    /> -->
+
+    <link rel="stylesheet" href="%PUBLIC_URL%/core/css/ionic.bundle.css" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+    <script type="module" src="%PUBLIC_URL%/core/dist/ionic/ionic.js"></script>
+    <script nomodule src="%PUBLIC_URL%/core/dist/ionic/ionic.esm.js"></script>
   </body>
 </html>
