@@ -3,6 +3,7 @@ form.entry-point {
   bottom: 0;
   width: 100%;
   padding-top: 2px;
+  padding-bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,18 +22,17 @@ form.entry-point {
       outline: none;
     }
     &[type="submit"] {
-      background: #141516;
+      background: #222428;
       width: 70px;
       outline: none;
-      border: 1px solid #222428;
+      border: none;
       cursor: pointer;
       font-weight: bold;
       border-radius: 8%;
-      box-shadow: 0 0 2px 1px #222428;
-      color: white;
-      text-align: center;
+      color: #fdfdfd;
+      padding: 0;
       &:hover {
-        background: #222428;
+        background: #222428f0;
       }
     }
   }
