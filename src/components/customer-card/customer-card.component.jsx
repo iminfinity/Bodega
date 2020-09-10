@@ -40,50 +40,27 @@ const CustomerCard = ({
       .then(() => alert.show("Customer Deleted"));
   };
   return (
-    // <div className="customer-card">
-    //   <img alt="user-pic" src={imageSource} className="customer-pic" />
-    //   <div className="customer-details">
-    //     <h2>
-    //       {current ? current.customerName : null}
-    //       <ion-button
-    //         className="delete-customer"
-    //         onClick={() => deleteCustomer()}
-    //         title="Delete Customer"
-    //         color="dark"
-    //       >
-    //         <ion-icon icon="trash-outline" />
-    //       </ion-button>
-    //     </h2>
-    //     <h3>{current ? current.customerPhoneNumber : null}</h3>
-    //     <p>Total: Rs {currentCustomerTotal}</p>
-    //   </div>
-    // </div>
-    <>
-      <ion-card>
-        <img src={imageSource} alt="profile-pic" />
-        <ion-card-header>
-          <ion-card-subtitle></ion-card-subtitle>
-          <ion-card-title>
-            {current ? current.customerName : null}
-          </ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          {current ? current.customerPhoneNumber : null}
-          <br />
-          Total: Rs <b>{currentCustomerTotal}</b>
-        </ion-card-content>
-        <div className="delete-customer">
-          <ion-button
-            onClick={() => deleteCustomer()}
-            title="Delete Customer"
-            color="dark"
-            size="small"
-          >
-            <ion-icon icon="trash-outline" />
-          </ion-button>
-        </div>
-      </ion-card>
-    </>
+    <ion-card>
+      <img src={imageSource} alt="profile-pic" />
+      <ion-card-header>
+        <ion-card-title>{current ? current.customerName : null}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        {current ? current.customerPhoneNumber : null}
+        <br />
+        Total: Rs <b>{currentCustomerTotal}</b>
+      </ion-card-content>
+      <div className="delete-customer">
+        <ion-button
+          onClick={() => deleteCustomer()}
+          title="Delete Customer"
+          color="dark"
+          size="small"
+        >
+          <ion-icon icon="trash-outline" />
+        </ion-button>
+      </div>
+    </ion-card>
   );
 };
 
