@@ -58,28 +58,32 @@ const CustomerCard = ({
     //     <p>Total: Rs {currentCustomerTotal}</p>
     //   </div>
     // </div>
-    <ion-card>
-      <img src={imageSource} alt="profile-pic" />
-      <ion-card-header>
-        <ion-card-subtitle></ion-card-subtitle>
-        <ion-card-title>{current ? current.customerName : null}</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        {current ? current.customerPhoneNumber : null}
-        <br />
-        Total: Rs <b>{currentCustomerTotal}</b>
-      </ion-card-content>
-      <div className="delete-customer">
-        <ion-button
-          onClick={() => deleteCustomer()}
-          title="Delete Customer"
-          color="dark"
-          size="small"
-        >
-          <ion-icon icon="trash-outline" />
-        </ion-button>
-      </div>
-    </ion-card>
+    <>
+      <ion-card>
+        <img src={imageSource} alt="profile-pic" />
+        <ion-card-header>
+          <ion-card-subtitle></ion-card-subtitle>
+          <ion-card-title>
+            {current ? current.customerName : null}
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          {current ? current.customerPhoneNumber : null}
+          <br />
+          Total: Rs <b>{currentCustomerTotal}</b>
+        </ion-card-content>
+        <div className="delete-customer">
+          <ion-button
+            onClick={() => deleteCustomer()}
+            title="Delete Customer"
+            color="dark"
+            size="small"
+          >
+            <ion-icon icon="trash-outline" />
+          </ion-button>
+        </div>
+      </ion-card>
+    </>
   );
 };
 
