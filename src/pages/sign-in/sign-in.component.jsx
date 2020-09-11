@@ -23,7 +23,10 @@ const SignIn = ({ handleSubmit }) => {
         onChange={(event) => setPassword(event.target.value)}
         placeholder="Enter Pasword"
       />
-      <input type="submit" value="Log in" />
+      <ion-button color="dark" type="submit">
+        <ion-icon name="log-in-outline"></ion-icon>
+        <span>Log in</span>
+      </ion-button>
       <p style={{ marginTop: "20px" }}>
         Sample - email: test@mail.com, password: bodega-react
       </p>

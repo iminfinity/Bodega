@@ -34,7 +34,7 @@ const Header = () => {
         <ion-buttons slot="primary">
           {signedIn ? (
             <ion-button onClick={logout}>
-              <ion-icon name="log-in-outline"></ion-icon>
+              <ion-icon name="log-out-outline"></ion-icon>
             </ion-button>
           ) : null}
         </ion-buttons>

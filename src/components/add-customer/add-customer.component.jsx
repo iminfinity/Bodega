@@ -76,7 +76,10 @@ const AddCustomer = () => {
         </label>
         <input type="file" id="file-upload" onChange={fileUpload} />
       </div>
-      <input type="submit" value="Add Customer" readOnly />
+      <ion-button color="dark" type="submit">
+        <ion-icon name="people-outline"></ion-icon>
+        <span>Add Customer</span>
+      </ion-button>
     </form>
   );
 };

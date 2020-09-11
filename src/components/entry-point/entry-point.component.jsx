@@ -44,7 +44,9 @@ const EntryPoint = ({ currentCustomer, identifier }) => {
         required
       />
 
-      <input type="submit" value="Add"></input>
+      <ion-button color="dark" type="submit">
+        <ion-icon name="add-sharp" />
+      </ion-button>
     </form>
   );
 };

@@ -24,20 +24,6 @@ form.entry-point {
       outline: none;
       border-color: #222428;
     }
-    &[type="submit"] {
-      background: #222428;
-      width: 70px;
-      outline: none;
-      border: none;
-      cursor: pointer;
-      font-weight: bold;
-      border-radius: 8%;
-      color: #fdfdfd;
-      padding: 0;
-      &:hover {
-        background: #222428f0;
-      }
-    }
   }
   @media (max-width: 800px) {
     padding-left: 3px;

@@ -27,23 +27,12 @@ form.add-customer {
     display: none;
   }
 
-  input[type="submit"] {
-    background: #222428;
-    width: 180px;
-    height: 40px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 2%;
-    color: #fdfdfd;
-    padding: 0;
-    font-size: 25px;
-    &:hover {
-      background: #222428f0;
+  ion-button {
+    span {
+      padding-left: 5px;
+      color: #f3f3f3;
     }
   }
-
   @media (max-width: 800px) {
     .input-group {
       width: 80%;
